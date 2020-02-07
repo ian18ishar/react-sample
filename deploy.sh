@@ -3,6 +3,8 @@
 
 sudo docker build -f "Dockerfile" -t ianisharpratama/react-sample:frontend-$TRAVIS_BUILD_NUMBER .
 # push apps image to docker hub
+sudo docker tag frontend-$TRAVIS_BUILD_NUMBER ianisharpratama/react-sample
+
 sudo docker push ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
 
 # go inside kubernetes Server
