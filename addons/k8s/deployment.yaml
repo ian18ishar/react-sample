@@ -6,7 +6,6 @@ metadata:
   namespace: kubishar-test
   annotations:
     flux.weave.works/tag.app: glob:latest
-    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   selector:
