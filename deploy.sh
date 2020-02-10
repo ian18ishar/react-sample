@@ -8,8 +8,8 @@ sudo docker build -f "Dockerfile" -t ianisharpratama/reactsample:frontend-$TRAVI
 #sudo docker tag frontend-$TRAVIS_BUILD_NUMBER ianisharpratama/react-sample
 
 sudo docker push ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_ID
-sudo docker tag ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_ID ianisharpratama/reactsample:frontend-v1
-sudo docker push ianisharpratama/reactsample:frontend-v1
+sudo docker tag ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_ID ianisharpratama/reactsample:frontend-latest
+sudo docker push ianisharpratama/reactsample:frontend-latest
 
 # go inside kubernetes Server
 #sed -i -e 's|KUBE_STAGING_CA_CERT|'"${KUBE_STAGING_CA_CERT}"'|g' kubeconfig

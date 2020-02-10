@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_ID
-        imagePullPolicy: IfNotPresent
+        image: ianisharpratama/reactsample:frontend-latest
+        imagePullPolicy: Alwaws
       imagePullSecrets:
       - name: kubis-secret
