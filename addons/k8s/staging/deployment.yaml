@@ -21,8 +21,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
+        image: ianisharpratama/reactsample:frontend-latest
         imagePullPolicy: Always
-        command: ["echo", "SUCCESS"]
       imagePullSecrets:
       - name: kubis-secret
