@@ -3,7 +3,7 @@
 
 sudo docker build -f "Dockerfile" -t ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER .
 #sudo docker build -t ianisharpratama/reactsample:frontend .
-sudo docker run ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
+#sudo docker run ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
 # push apps image to docker hub
 #sudo docker tag frontend-$TRAVIS_BUILD_NUMBER ianisharpratama/react-sample
 
