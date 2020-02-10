@@ -4,6 +4,8 @@ kind: Deployment
 metadata:
   name: app
   namespace: kubishar-test
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   selector:
@@ -21,4 +23,4 @@ spec:
     spec:
       containers:
       - name: app
-        image: nginx:1.16.1-perl
+        image: nginx:1.16-perl
