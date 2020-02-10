@@ -1,14 +1,14 @@
 # fill the env file
 #sed -i -e 's|REAK_STAGING_SONAR_URL|'"${REAK_STAGING_SONAR_URL}"'|g' docker-staging.env
 
-sudo docker build -f "Dockerfile" -t ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER .
+sudo docker build -f "Dockerfile" -t ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_ID .
 #sudo docker build -t ianisharpratama/reactsample:frontend .
 #sudo docker run ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
 # push apps image to docker hub
 #sudo docker tag frontend-$TRAVIS_BUILD_NUMBER ianisharpratama/react-sample
 
-sudo docker push ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
-sudo docker tag ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER ianisharpratama/reactsample:frontend-latest
+sudo docker push ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_ID
+sudo docker tag ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_ID ianisharpratama/reactsample:frontend-latest
 sudo docker push ianisharpratama/reactsample:frontend-latest
 
 # go inside kubernetes Server
