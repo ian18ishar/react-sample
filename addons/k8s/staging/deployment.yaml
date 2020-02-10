@@ -4,8 +4,6 @@ kind: Deployment
 metadata:
   name: app
   namespace: kubishar-test
-  annotations:
-    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   selector:
@@ -25,6 +23,6 @@ spec:
       - name: app
         image: ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
         imagePullPolicy: Always
-        command: [ "echo", "SUCCESS" ]
+        command: ["echo", "SUCCESS"]
       imagePullSecrets:
-        - name: kubis-secret
+      - name: kubis-secret
