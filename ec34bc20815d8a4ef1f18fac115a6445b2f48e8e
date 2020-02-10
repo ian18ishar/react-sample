@@ -1,0 +1,1 @@
+{"jobID":"167094f1-d5cd-d594-9655-134505687e12","spec":{"type":"policy","cause":{"Message":"asdf","User":"ian ishar \u003cianisharpratama@gmail.com\u003e"},"spec":{"kubishar-test:deployment/app":{"add":null,"remove":{"locked":"true","locked_msg":"\"asdf\"","locked_user":"ian ishar \u003cianisharpratama@gmail.com\u003e"}}}},"result":null}
