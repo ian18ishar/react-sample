@@ -1,0 +1,1 @@
+{"jobID":"de642fa5-9777-043e-c6d8-86c575de71be","spec":{"type":"policy","cause":{"Message":"","User":"ian ishar \u003cianisharpratama@gmail.com\u003e"},"spec":{"kubishar-test:deployment/app":{"add":{"locked":"true","locked_msg":"\"\"","locked_user":"ian ishar \u003cianisharpratama@gmail.com\u003e"},"remove":null}}},"result":null}
