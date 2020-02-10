@@ -4,6 +4,10 @@ kind: Deployment
 metadata:
   name: app
   namespace: kubishar-test
+  annotations:
+    flux.weave.works/locked_user: ian ishar <ianisharpratama@gmail.com>
+    flux.weave.works/locked: 'true'
+    flux.weave.works/locked_msg: '""'
 spec:
   replicas: 1
   selector:
