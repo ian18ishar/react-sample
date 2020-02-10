@@ -23,4 +23,8 @@ spec:
     spec:
       containers:
       - name: app
-        image: nginx:1.16-perl
+        image: ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
+        imagePullPolicy: Always
+        command: [ "echo", "SUCCESS" ]
+      imagePullSecrets:
+        - name: kubis-secret
