@@ -21,4 +21,4 @@ spec:
     spec:
       containers:
       - name: app
-        image: nginx:1.16.1-perl
+        image: nginx:1.16-perl
