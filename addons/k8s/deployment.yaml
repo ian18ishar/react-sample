@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app
-  namespace: kubishar
+  namespace: kubishar-test
 spec:
   replicas: 1
   selector:
@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ianisharpratama/reactsample:frontend-17
+        image: ianisharpratama/reactsample:frontend-latest
         imagePullPolicy: Always
       imagePullSecrets:
       - name: kubis-secret
