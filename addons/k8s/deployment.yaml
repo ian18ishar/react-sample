@@ -4,6 +4,9 @@ kind: Deployment
 metadata:
   name: app
   namespace: kubishar-test
+  annotations:
+    flux.weave.works/tag.app: glob:frontend-*
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   selector:
