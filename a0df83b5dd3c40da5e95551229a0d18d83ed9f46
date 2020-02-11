@@ -1,0 +1,1 @@
+{"jobID":"d2e750d0-e9b2-aa43-dade-96154bac122e","spec":{"type":"policy","cause":{"Message":"","User":"ian ishar \u003cianisharpratama@gmail.com\u003e"},"spec":{"kubishar-test:deployment/app":{"add":null,"remove":{"tag.app":"glob:latest"}}}},"result":null}
