@@ -7,7 +7,7 @@ services:
 - docker
 env:
   global:
-  - TRAVIS_ALLOW_FAILURE=false
+  - TRAVIS_ALLOW_FAILURE=true
 install:
 - npm install
 before_script:
