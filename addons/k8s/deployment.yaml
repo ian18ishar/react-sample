@@ -23,11 +23,7 @@ spec:
     spec:
       containers:
       - name: app
-<<<<<<< HEAD
-        image: ianisharpratama/reactsample:frontend-*
-=======
         image: ianisharpratama/reactsample:frontend-148313045
->>>>>>> 3335582f9909c44a0e7d240d6b8b113b05f54bc1
         imagePullPolicy: Always
       imagePullSecrets:
       - name: kubis-secret
