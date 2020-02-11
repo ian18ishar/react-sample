@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ianisharpratama/reactsample:frontend-latest
+        image: ianisharpratama/reactsample:frontend-148313045
         imagePullPolicy: Always
       imagePullSecrets:
       - name: kubis-secret
