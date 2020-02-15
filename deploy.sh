@@ -1,8 +1,8 @@
 # fill the env file
 #sed -i -e 's|REAK_STAGING_SONAR_URL|'"${REAK_STAGING_SONAR_URL}"'|g' docker-staging.env
 #sudo docker login https://pelabuhan.alterra.dev -u "$(DOCKER_USERNAME)" -p "$(DOCKER_PASSWORD)"
-sudo docker build -f "Dockerfile" /ianisharpratama/react-i2p:$TRAVIS_BUILD_ID .
-sudo docker tag ianisharpratama/react-i2p:$TRAVIS_BUILD_ID ianisharpratama/project-i2-/react-i2p:v1
+sudo docker build -f "Dockerfile" -t /ianisharpratama/react-i2p:frontend-$TRAVIS_BUILD_ID .
+sudo docker tag ianisharpratama/react-i2p:frontend-$TRAVIS_BUILD_ID ianisharpratama/project-i2-/react-i2p:frontend-v1
 #sudo docker build -t ianisharpratama/reactsample:frontend .
 #sudo docker run ianisharpratama/reactsample:frontend-$TRAVIS_BUILD_NUMBER
 # push apps image to docker hub
