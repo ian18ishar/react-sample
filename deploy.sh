@@ -4,8 +4,8 @@
 
 ###PELABUHAN
 sudo docker build -f "Dockerfile" -t react-i2p:$TRAVIS_BUILD_ID .
-sudo docker tag react-i2p:$TRAVIS_BUILD_ID pelabuhan.alterra.dev/ianisharpratama/i2p/react-i2p:$TRAVIS_BUILD_ID
-sudo docker push pelabuhan.alterra.dev/ianisharpratama/i2p/react-i2p:$TRAVIS_BUILD_ID
+sudo docker tag react-i2p:$TRAVIS_BUILD_ID pelabuhan.alterra.dev/i2p/react-i2p:$TRAVIS_BUILD_ID
+sudo docker push pelabuhan.alterra.dev/i2p/react-i2p:$TRAVIS_BUILD_ID
 ###DOCKERHUB
 #sudo docker build -f "Dockerfile" -t ianisharpratama/react-i2p:$TRAVIS_BUILD_ID .
 #sudo docker tag ianisharpratama/react-i2p:$TRAVIS_BUILD_ID ianisharpratama/react-i2p:v2
