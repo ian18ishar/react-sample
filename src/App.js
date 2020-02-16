@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Demo Belajar ReactJS New Configuration repo Harbor v1
+            Demo Belajar ReactJS New Configuration repo Harbor v2
           </a>
         </header>
       </div>
