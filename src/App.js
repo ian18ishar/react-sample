@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Demo Belajar ReactJS New Configuration repo Harbor-v1 v1
+            Demo Belajar ReactJS New Configuration repo Harbor-v1 travis-build-number v1
           </a>
         </header>
       </div>
