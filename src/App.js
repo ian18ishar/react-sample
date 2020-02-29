@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Demo Belajar ReactJS New Configuration REPO 1 Kubis 1
+            Reactor - KUBISHAR project keel testing-v1
           </a>
         </header>
       </div>
